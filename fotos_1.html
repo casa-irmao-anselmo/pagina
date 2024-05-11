@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Orações Irmão Anselmo</title>
+    <style>
+        /* Estilo global para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #024a7f;
+            color:#fff;
+            position: fixed; /* Adicionando a posição fixa */
+            top: 0; /* Fixando o cabeçalho no topo */
+            width: 100%; /* Ocupando toda a largura da tela */
+            z-index: 999; /* Definindo um z-index maior */
+        }
+
+        h2 {
+            margin-right: auto; /* Isso empurra o título para a esquerda */
+            margin-left: 10px; /* Adiciona uma margem à esquerda para criar um espaço */
+        }
+
+        h2.galeria {
+            text-align: center;
+            color: black;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px; /* Ajuste o espaçamento entre os links conforme necessário */
+            text-decoration: none;
+           
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        /* Estilo para a seção principal do conteúdo */
+        main {
+            padding: 80px 20px 20px; /* Ajuste para adicionar espaço entre o cabeçalho e o conteúdo */
+            background-color: #f5f5f5;
+        }
+
+        /* Estilo para as imagens */
+        .foto_img {
+            text-align: center; /* Centraliza as imagens */
+            margin-bottom: 20px; /* Espaçamento entre as imagens */
+        }
+
+        .foto_img img {
+            width: 80%; /* Largura da imagem */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .foto_img h4 {
+            margin-top: 10px; /* Espaçamento entre a imagem e a legenda */
+            text-align: center; /* Centraliza a legenda */
+        }
+
+        /* Efeito de hover nas imagens */
+        .foto_img:hover img {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #024a7f;
+            color: #fff;
+            padding: 20px 0; /* Adiciona espaçamento interno */
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>    
+    <header>
+        <h2>Casa de Orações Irmão Anselmo</h2>
+        <nav>
+            <ul>            
+                <li><a href="index.html">Home</a></li>              
+            </ul>
+        </nav>
+    </header>
+       
+    <main>
+
+        <h2 class="h2 galeria">Galeria de Fotos</h2>
+
+        <!-- Apenas as fotos -->
+        <div class="foto_img">
+            <img src="imagens/cesta1.jpg" alt="Entrega de Cestas Básicas">  
+            <h4>Entrega de Cestas Básicas</h4>
+        </div>    
+
+        <div class="foto_img">
+            <img src="imagens/cesta2.jpg" alt="Entrega de Cestas Básicas">
+            <h4>Entrega de Cestas Básicas</h4>
+        </div>
+
+        <div class="foto_img">
+            <img src="imagens/natal.jpg" alt="Entrega de Prendas">
+            <h4>Entrega de Prendas do Natal Social</h4>
+        </div>
+
+        <div class="foto_img">
+            <img src="imagens/miojo.jpg" alt="foto de doação recebida 1500 miojo">
+            <h4>Doação recebida de 1500 pacotes de Miojo para serem distribídos as famílias atendidas. Obrigado Nissin Ibiuna</h4>
+        </div>     
+    </main>
+    
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados</p>
+        <p>Casa de Orações Irmão Anselmo</p>
+        <p>almeidanil1979@gmail.com</p>
+    </footer> 
+</body>
+</html>

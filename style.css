@@ -1,0 +1,198 @@
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #024a7f;
+  position: fixed; /* Adicionando position fixed para fixar o cabeçalho */
+  width: 100%; /* Definindo a largura para ocupar toda a largura da tela */
+  top: 0; /* Fixando o cabeçalho no topo */
+  z-index: 1000; /* Garantindo que o cabeçalho esteja acima de outros elementos */
+}
+
+
+#menu a,
+#btn-mobile {
+  color: white;
+}
+
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #024a7f;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(250, 248, 248, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  overflow-x: hidden; /* A barra de rolagem horizontal é ocultada */
+}
+
+main {
+  padding: 70px 20px 20px; 
+  margin-top: 60px; 
+  background-color:#cfdbe5
+}
+
+section {
+  margin-top: -30px; /* Reduzindo o espaço entre o cabeçalho e as seções */
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; 
+}
+
+.button {
+  background-color: #3498db; 
+  color: #fff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* A borda é removida */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* O cursor muda ao passar */
+  transition: background-color 0.3s; /* Transição suave de cor de fundo */
+  width: auto; /* Define a largura do botão */
+  max-width: 100%;
+  margin-right: 20px; /* Margem direita para os botões */
+  font-weight: bold; /* Texto em negrito */
+}
+  
+.button:hover {
+  background-color: #1e3746; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o container dos fotos.Flexbox para organizar os elementos em uma linha flexível.*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+.foto_img {
+  width: calc(33.33% - 20px); /*  Define a largura de cada foto como um terço do contêiner, com uma margem à direita de 20px. */
+  margin-bottom: 20px;
+}
+
+.foto_img-content {
+  text-align: center;
+}
+  
+.foto_img img {
+  max-width: 60%; 
+  height: auto; /* Permite que a altura da imagem seja ajustada automaticamente para manter a proporção */
+}
+
+.fotos-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo para o parágrafo dentro do botão do portfólio */
+.fotos-button p {
+  margin-bottom: 10px;
+}
+  
+footer {
+  background-color: #024a7f; 
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
